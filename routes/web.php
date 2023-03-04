@@ -22,7 +22,7 @@ use App\Http\Controllers\AdminController;
 //backend route 
 
 Route::get('/admins', [AdminController::class, 'index'])->name('admin.login');
-Route::get('/dashboard', [AdminController::class, 'dashboard']); 
+Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin_dashboard'); 
 Route::post('/admin/dashboard', [AdminController::class, 'admin_dashboard'])->name('admin.dashboard'); 
 
 
